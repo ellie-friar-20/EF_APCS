@@ -32,5 +32,6 @@ public class ShippingCalculator
         {
             System.out.println("This package cannot be shipped.");
         }
+        scan.close();
     }
 }
