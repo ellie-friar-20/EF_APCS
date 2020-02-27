@@ -65,85 +65,85 @@ public class ScrabbleCalculator
         System.out.println("Checking to see if your word can be built out of tiles available");
         scan.close();
         for (int i = 0; i < word.length(); i++) {                                     
-            if (word.substring(i, i + 1).equalsIgnoreCase("a")) {
+            if (word.substring(i, i + 1).equalsIgnoreCase("a") && allA >= aPoint) {
                 aPoint++;
             } 
-            else if(word.substring(i, i + 1).equalsIgnoreCase("b")) {
+            else if(word.substring(i, i + 1).equalsIgnoreCase("b") && allB >= bPoint) {
                 bPoint++;
             }
 
-             else if(word.substring(i, i + 1).equalsIgnoreCase("c")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("c") && allC >= cPoint) {
                 cPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("d")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("d") && allD >= dPoint) {
                 dPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("e")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("e") && allE >= ePoint) {
                 ePoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("f")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("f") && allF >= fPoint) {
                 fPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("g")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("g") && allG >= gPoint) {
                 gPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("h")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("h") && allH >= hPoint) {
                 hPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("i")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("i") && allI >= iPoint) {
                 iPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("j")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("j") && allJ >= jPoint) {
                 jPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("k")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("k") && allK >= kPoint) {
                 kPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("l")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("l") && allL >= lPoint) {
                 lPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("m")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("m") && allM >= mPoint) {
                 mPoint++;
-            } else if(word.substring(i, i + 1).equalsIgnoreCase("n")) {
+            } else if(word.substring(i, i + 1).equalsIgnoreCase("n") && allN >= nPoint) {
                 nPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("o")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("o") && allO >= oPoint) {
                 oPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("p")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("p") && allP >= pPoint) {
                 pPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("q")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("q") && allQ >= qPoint) {
                 qPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("r")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("r") && allR >= rPoint) {
                 rPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("s")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("s") && allS >= sPoint) {
                 sPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("t")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("t") && allT >= tPoint) {
                 tPoint++; 
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("u")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("u") && allU >= uPoint) {
                 uPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("v")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("v") && allV >= vPoint) {
                 vPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("w")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("w") && allW >= wPoint) {
                 wPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("x")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("x") && allX >= xPoint) {
                 xPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("y")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("y") && allY >= yPoint) {
                 yPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase("z")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase("z") && allZ >= zPoint) {
                 zPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase(" ")) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase(" ") && allBlank >= aPoint) {
                 blankPoint++;
             }
              else {
@@ -168,8 +168,8 @@ public class ScrabbleCalculator
                 } else if( word.substring(ii, ii + 1).equals(" ")) {
                     points += 0;
                 }
-                System.out.println("You word is worth " + points);
             }
+            System.out.println("You word is worth " + points);
         }
 
     }
