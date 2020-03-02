@@ -146,7 +146,7 @@ public class ScrabbleCalculator
              else if(word.substring(i, i + 1).equalsIgnoreCase("z") && allZ >= zPoint) {
                 zPoint++;
             }
-             else if(word.substring(i, i + 1).equalsIgnoreCase(" ") && allBlank >= aPoint) {
+             else if(word.substring(i, i + 1).equalsIgnoreCase(" ") && allBlank >= blankPoint) {
                 blankPoint++;
             }
              else {
