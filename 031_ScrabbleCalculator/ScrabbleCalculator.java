@@ -63,6 +63,10 @@ public class ScrabbleCalculator
         System.out.println("What word do you want to make?");
         word = scan.nextLine();
         System.out.println("Checking to see if your word can be built out of tiles available");
+<<<<<<< HEAD
+=======
+        scan.close();
+>>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
         for (int i = 0; i < word.length(); i++) {                                     
             if (word.substring(i, i + 1).equalsIgnoreCase("a") && allA >= aPoint) {
                 aPoint++;
@@ -147,7 +151,10 @@ public class ScrabbleCalculator
             }
              else {
                 System.out.println("You cant make that word sorry there are not enough tiles");
+<<<<<<< HEAD
              }
+=======
+>>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
             }
 
             for(int ii = 0; ii < word.length(); ii++) {
@@ -170,9 +177,14 @@ public class ScrabbleCalculator
                 }
             }
             System.out.println("You word is worth " + points);
+<<<<<<< HEAD
 
             scan.close();
+=======
+>>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
         }
 
     }
 }
+
+        

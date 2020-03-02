@@ -8,8 +8,16 @@ public class AbecedarianWords {
             String oneLetter = word.substring(i);
             String twoLetter = word.substring(i + 1);
             int nextLetter = oneLetter.compareToIgnoreCase(secondLetter);
-            if(next > 0) {
-                System.out.println()
+            if(next > 0) 
+            {
+                System.out.println("This is not a abecedarian word."); 
+            }
+            else if(next <= 0)
+            {
+
+            }
+            scan.close();
         }
+
     }
 }
