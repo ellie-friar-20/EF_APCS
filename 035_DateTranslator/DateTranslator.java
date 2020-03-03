@@ -12,10 +12,10 @@ public class DateTranslator {
         int year = scan.nextInt();
         System.out.println("Choose whether you want the American or European date format: ");
         String whichFormat = scan.next();
-        if(whichFormat.equals("American"))
+        if(whichFormat.equalsIgnoreCase("American"))
         {
             dateAmerican(month, day, year);
-        } else if(whichFormat.equals("European"))
+        } else if(whichFormat.equalsIgnoreCase("European"))
         {
             dateEuropean(day, month, year);
         } else
