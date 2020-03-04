@@ -20,9 +20,9 @@ public class BasicNestedPractice
             System.out.println("You must only use less than 20 for both the rows and the columns");
         } else 
         {
-            for(int i = 0, i < rows; i++)
+            for(int i = 0; i < rows; i++)
             {
-                for( int ii = 0, ii , columnns, ii++)
+                for( int ii = 0; ii; columnns, ii++)
                 {
                     System.out.print(character + " ");
                 }
