@@ -3,7 +3,7 @@ public class BasicNestedPractice
 {
     public static void main(String[] args)
     {
-        scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String character;
         int rows;
         int columnns;
@@ -22,7 +22,7 @@ public class BasicNestedPractice
         {
             for(int i = 0; i < rows; i++)
             {
-                for( int ii = 0; ii; columnns, ii++)
+                for( int ii = 0; ii < columnns; ii++)
                 {
                     System.out.print(character + " ");
                 }

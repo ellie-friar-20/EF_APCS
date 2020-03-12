@@ -1,37 +1,37 @@
 import java.util.Scanner;
 public class ScrabbleCalculator
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
         String word;
         int points = 0;
-        int allA = 9;
-        int allB = 2;
-        int allC = 2;
-        int allD = 4;
-        int allE = 12;
-        int allF = 2;
-        int allG = 3;
-        int allH = 2;
-        int allI = 9;
-        int allJ = 1;
-        int allK = 1;
-        int allL = 4;
-        int allM = 2;
-        int allN = 6;
-        int allO = 8;
-        int allP = 2;
-        int allQ = 1;
-        int allR = 6;
-        int allS = 4;
-        int allT = 6;
-        int allU = 4;
-        int allV = 2;
-        int allW = 2;
-        int allX = 1;
-        int allY = 2;
-        int allZ = 1;
-        int allBlank = 2;
+        final int allA = 9;
+        final int allB = 2;
+        final int allC = 2;
+        final int allD = 4;
+        final int allE = 12;
+        final int allF = 2;
+        final int allG = 3;
+        final int allH = 2;
+        final int allI = 9;
+        final int allJ = 1;
+        final int allK = 1;
+        final int allL = 4;
+        final int allM = 2;
+        final int allN = 6;
+        final int allO = 8;
+        final int allP = 2;
+        final int allQ = 1;
+        final int allR = 6;
+        final int allS = 4;
+        final int allT = 6;
+        final int allU = 4;
+        final int allV = 2;
+        final int allW = 2;
+        final int allX = 1;
+        final int allY = 2;
+        final int allZ = 1;
+        final int allBlank = 2;
         int blankPoint = 0;
         int aPoint= 0;
         int bPoint = 0;
@@ -59,14 +59,10 @@ public class ScrabbleCalculator
         int xPoint = 0;
         int yPoint = 0;
         int zPoint = 0;
-        Scanner scan = new Scanner(System.in);
+        final Scanner scan = new Scanner(System.in);
         System.out.println("What word do you want to make?");
         word = scan.nextLine();
         System.out.println("Checking to see if your word can be built out of tiles available");
-<<<<<<< HEAD
-=======
-        scan.close();
->>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
         for (int i = 0; i < word.length(); i++) {                                     
             if (word.substring(i, i + 1).equalsIgnoreCase("a") && allA >= aPoint) {
                 aPoint++;
@@ -151,11 +147,8 @@ public class ScrabbleCalculator
             }
              else {
                 System.out.println("You cant make that word sorry there are not enough tiles");
-<<<<<<< HEAD
-             }
-=======
->>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
             }
+        }
 
             for(int ii = 0; ii < word.length(); ii++) {
                 if (word.substring(ii, ii + 1).equals("a") || word.substring(ii, ii + 1).equals("e") || word.substring(ii, ii + 1).equals("i") || word.substring(ii , ii + 1).equals("l") || word.substring(ii, ii + 1).equals("n") || word.substring(ii, ii + 1).equals("o") || word.substring(ii, ii + 1).equals("r") || word.substring(ii, ii + 1).equals("s") || word.substring(ii, ii + 1).equals("t") || word.substring(ii, ii + 1).equals("u")) {
@@ -177,14 +170,6 @@ public class ScrabbleCalculator
                 }
             }
             System.out.println("You word is worth " + points);
-<<<<<<< HEAD
-
-            scan.close();
-=======
->>>>>>> e1f7b35d05d9ec03e185b955b93099eb9f279f7c
         }
-
     }
-}
-
-        
+}        

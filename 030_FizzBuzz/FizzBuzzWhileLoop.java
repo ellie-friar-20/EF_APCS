@@ -1,8 +1,10 @@
 public class FizzBuzzWhileLoop
 {
-    public static void main(String[] args)
-    {
-        int num = 100;
+    public static void main(final String[] args) {
+        /*
+         * while loop with if and else statements to check if conditions are true or not
+         */
+        final int num = 100;
         int count = 1;
         while (count <= num)
         {
