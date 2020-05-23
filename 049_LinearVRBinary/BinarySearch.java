@@ -29,8 +29,6 @@ public class BinarySearch
             {
                 lastNumber = middleNumber - 1;
             }
-            middleNumber = (firstNumber + lastNumber) / 2;
-            counter++;
         }
         return -1;
     }
